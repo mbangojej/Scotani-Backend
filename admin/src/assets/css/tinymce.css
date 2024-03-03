@@ -1,0 +1,7 @@
+/* Add left and right padding to the TinyMCE content */
+.mce-content-body {
+    padding-left: 20px; /* Adjust the value as needed */
+    padding-right: 20px; /* Adjust the value as needed */
+}
+
+

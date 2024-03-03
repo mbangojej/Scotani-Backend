@@ -1,0 +1,621 @@
+<style>
+.wrapper {
+    overflow-x: hidden;
+}
+.container-box {
+    max-width: 1620px;
+    margin:  0 auto;
+}
+img {
+    max-width: 100%;
+}
+.template-wrapper p {
+    font-size: 16px;
+}
+.template-wrapper {
+    padding: 20px 35px;
+}
+.template-banner {
+    background-color: #14061D;
+    border-radius: 30px;
+    padding: 40px 0px;
+}
+.template-about-wrapper .template-banner-content {
+    padding-right: 0;
+}
+.section-heading h1 {
+    color: #14061D;
+    font-size: 80px;
+    font-weight: bold;
+}
+.template-banner-content h5 {
+    color: white;
+    font-size: 30px;
+    margin-bottom: 8px;
+    font-weight: 300;
+}
+.template-banner-content h2 {
+    color: white;
+    font-size: 72px;
+    line-height: 72px;
+    font-weight: 900;
+}
+.template-banner-img {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.template-about-wrapper .template-banner-content h5 {
+    margin-bottom: 0;
+}
+.template-about-wrapper .template-banner-content h2 {
+    margin-bottom: 15px;
+}
+.about-main-section {
+    padding-top: 80px;
+}
+.about-main-section-heading {
+    margin-bottom: 80px;
+    text-align: center;
+}
+.about-main-section-heading h3 {
+    color: #14061D;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.about-main-section-heading p {
+    color: #15161D;
+    font-size: 24px;
+    font-weight: normal;
+    line-height: 36px;
+}
+.template-boxes {
+    padding: 80px 0px 0px;
+}
+.template-about-wrapper .boxes-height {
+    margin-bottom: 70px;
+}
+.template-boxes-content {
+    position: relative;
+    box-shadow: 0px 3px 20px #14061D0D;
+    border: 1px solid #EEEEF0;
+    border-radius: 20px;
+    text-align: center;
+    padding: 100px 20px 40px;
+}
+.template-boxes-content:hover {
+    background-color: #86C3E5;
+}
+.template-boxes-content:hover h4, .template-boxes-content:hover p {
+    color: white;
+}
+.template-boxes-content-img {
+    position: absolute;
+    border-radius: 50%;
+    width: 137px;
+    height: 137px;
+    background-color: white;
+    border: 1px solid #EEEEF0;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -70px;
+    padding: 3px;
+}
+.template-boxes-content-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.template-boxes-content h4 {
+    color: #15161D;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.template-boxes-content p {
+    line-height: 24px;
+    color: #15161D;
+    margin-bottom: 0;
+}
+.about-video-section {
+    background-color: #86C3E5;
+    position: relative;
+    padding: 60px 0px;
+}
+.about-video-section::before {
+    content: '';
+    background-image: url('https://skin-canvas.arhamsoft.org//images/Group4520.svg');
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: repeat;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+}
+.about-video-section-content h3 {
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.about-video-section-content h6 {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 28px;
+}
+.about-video-section-content p {
+    color: white;
+    font-size: 24px;
+    font-weight: normal;
+    margin-bottom: 35px;
+    line-height: 36px;
+}
+.about-video-section .template-info-video {
+    height: 622px;
+}
+.template-info-video iframe, .template-info-video span {
+    border-radius: 18px;
+    height: 100%;
+    width: 100%;
+}
+.template-about-listing {
+    background-color: #F0F3F5;
+    padding: 100px 0px;
+}
+.template-about-listing-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.template-about-listing-content:last-child {
+    margin-bottom: 0;
+}
+.template-about-listing-img {
+    box-shadow: 0px 3px 10px #00000015;
+    border-radius: 50%;
+    padding: 3px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.template-about-listing-img img {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+.template-about-listing-info {
+    width: calc(100% - 120px);
+    padding-left: 50px;
+}
+.template-about-listing-info h4 {
+    font-size: 30px;
+    color: #15161D;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.template-about-listing-info p {
+    margin-bottom: 0;
+    color: #15161D;
+    line-height: 24px;
+}
+.template-form-wrapper {
+    padding: 80px 0px;
+}
+.template-form-wrapper.template-about-form .section-heading {
+    text-align: center;
+}
+.template-form-wrapper form .form-control {
+    background-color: #F0F3F5;
+    border: 1px solid #EEEEF0;
+    border-radius: 10px;
+    box-shadow: unset;
+    outline: none;
+    color: #677076;
+    padding: 30px 25px;
+}
+.template-form-wrapper form textarea {
+    resize: none;
+}
+.form-button {
+    margin-left: auto;
+    padding-right: 15px;
+    text-align: right;
+}
+.btn-blue {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    background-color: #14061D;
+    border-radius: 11px;
+    box-shadow: unset;
+    padding: 16px 36px;
+    transition: all ease-in-out 0.6s;
+    border: none;
+}
+.btn-blue:hover {
+    background-color: #531977;
+}
+.template-info-img {
+    box-shadow: 0px 3px 48px #00000017;
+    border-radius: 18px;
+    height: 368px;
+}
+.template-info-img img {
+    height: 100%;
+    width: 100%;
+    border-radius: 18px;
+    object-fit: cover;
+}
+@media (max-width: 1700px) {
+    .container-box {
+        max-width: 1320px;
+    }
+    .template-banner {
+        padding: 40px 20px;
+    }
+    .template-banner-content {
+        padding-right: 170px;
+    }
+    .template-banner-content h2 {
+        font-size: 60px;
+        line-height: 68px;
+    }
+    .section-wrapper {
+        padding: 50px 0px;
+    }
+    .section-heading h1 {
+        font-size: 68px;
+    }
+    .template-form-wrapper {
+        padding: 30px 0px;
+    }
+}
+@media (max-width: 1400px) {
+    .section-wrapper {
+    padding: 30px 0px;
+}
+    .container-box {
+        max-width: 1140px;
+    }
+    .template-banner-content h2 {
+        font-size: 52px;
+        line-height: 60px;
+    }
+    .section-heading {
+    margin-bottom: 30px;
+}
+    .section-heading h1 {
+        font-size: 60px;
+    }
+    .section-heading h6 {
+        font-size: 26px;
+    }
+    .template-boxes .boxes-height {
+        margin-bottom: 90px;
+    }
+    .template-boxes-content {
+        padding: 80px 20px 30px;
+    }
+    .template-boxes-content-img {
+        width: 110px;
+        height: 110px;
+        top: -56px;
+    }
+    .about-main-section-heading h3 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+    .about-main-section-heading p {
+        font-size: 21px;
+        line-height: 33px;
+    }
+    .about-main-section {
+        padding-top: 50px;
+    }
+    .about-main-section-heading {
+        margin-bottom: 30px;
+    }
+    .about-main-section .template-boxes .boxes-height {
+        margin-bottom: 50px;
+    }
+    .about-video-section-content h3 {
+        font-size: 50px;
+    }
+    .about-video-section-content h6 {
+        font-size: 22px;
+        margin-bottom: 20px;
+        line-height: 32px;
+    }
+    .about-video-section-content p {
+        font-size: 21px;
+        margin-bottom: 30px;
+        line-height: 32px;
+    }
+}
+@media (max-width: 1199px) {
+    .container-box {
+        max-width: 960px;
+    }
+    .template-banner-content {
+        padding-right: 60px;
+    }
+    .template-banner-content h2 {
+        font-size: 46px;
+        line-height: 50px;
+    }
+    .section-heading h1 {
+        font-size: 52px;
+    }
+    .section-heading h6 {
+    font-size: 22px;
+    }
+    .about-main-section-heading h3 {
+        font-size: 44px;
+        margin-bottom: 15px;
+    }
+    .template-about-listing {
+        padding: 70px 0px;
+    }
+    .template-about-listing-img {
+        width: 110px;
+        height: 110px;
+    }
+    .template-about-listing-info {
+        width: calc(100% - 110px);
+        padding-left: 30px;
+    }
+    .template-about-listing-content {
+        margin-bottom: 30px;
+    }
+    .about-main-section .template-boxes .boxes-height {
+        margin-bottom: 90px;
+    }
+}
+@media (max-width: 991px) {
+    .container-box {
+        max-width: 720px;
+    }
+    .template-banner {
+        text-align: center;
+    }
+    .template-banner-content {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    .template-banner-img {
+        justify-content: center;
+    }
+    .section-heading {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .section-heading h1 {
+        font-size: 48px;
+    }
+    .template-banner-content h2 {
+        font-size: 42px;
+    }
+    .about-video-section-content {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .about-video-section {
+        padding: 50px 0px;
+    }
+    .about-main-section .template-boxes .boxes-height {
+        margin-bottom: 90px;
+    }
+    .about-main-section .template-boxes .boxes-height:last-child {
+        margin-bottom: 40px;
+    }
+    .template-about-wrapper .template-banner-content h5 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+}
+@media (max-width: 767px) {
+    .container-box {
+        max-width: 540px;
+    }
+    .template-banner-content h2 {
+        font-size: 35px;
+    }
+    .section-heading h1 {
+        font-size: 44px;
+    }
+    .section-heading h6 {
+        font-size: 21px;
+    }
+    .template-boxes {
+        padding: 70px 0px 0px;
+    }
+    .template-form-wrapper {
+        padding: 30px 0px 0px;
+    }
+    .about-main-section-heading h3 {
+        font-size: 38px;
+        margin-bottom: 15px;
+    }
+    .about-main-section-heading p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .template-form-wrapper.template-about-form {
+        padding-bottom: 30px;
+    }
+    .about-video-section-content h3 {
+        font-size: 40px;
+    }
+}
+@media (max-width: 575px) {
+    .container-box {
+        max-width: 100%;
+        padding: 0px 15px;
+    }
+    .template-wrapper {
+    padding: 20px 15px;
+    }
+    .template-banner-content h2 {
+        font-size: 33px;
+        line-height: 38px;
+    }
+    .template-banner-content h5 {
+        font-size: 26px;
+        margin-bottom: 8px;
+    }
+    .section-heading h1 {
+        font-size: 36px;
+    }
+}
+</style>
+<div class='template-wrapper template-about-wrapper'>
+    <div class='template-banner'>
+        <div class='container-box'>
+            <div class='row d-flex align-items-center'>
+                <div class='col-lg-7'>
+                    <div class='template-banner-content'>
+                        <h2>ABOUT US</h2>
+                        <h5>WE CYBER-GUARD YOUR DATA, DEVICES & E-COMMUNICATIONS</h5>
+                    </div>
+                </div>
+                <div class='col-lg-5'>
+                    <div class='template-banner-img'>
+                        <img src='https://skin-canvas.arhamsoft.org//static/media/about-us-banner.564cd2ab.png' alt="banner-img" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class='about-main-section'>
+        <div class='container-box'>
+            <div class='about-main-section-heading'>
+                <h3>Lorem ipsum</h3>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet</p>
+            </div>
+            <div class='template-boxes'>
+                <div class='row'>
+                    <div class='col-xl-3 col-lg-4 boxes-height'>
+                        <div class='template-boxes-content'>
+                            <div class='template-boxes-content-img'>
+                                <img src='https://skin-canvas.arhamsoft.org//images/circle-image.png' alt='box-img' />
+                            </div>
+                            <h4>Lorem ipsum</h4>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+                        </div>
+                    </div>
+                    <div class='col-xl-3 col-lg-4 boxes-height'>
+                        <div class='template-boxes-content'>
+                            <div class='template-boxes-content-img'>
+                                <img src='https://skin-canvas.arhamsoft.org//images/circle-image.png' alt='box-img' />
+                            </div>
+                            <h4>Kerop Kosle</h4>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+                        </div>
+                    </div>
+                    <div class='col-xl-3 col-lg-4 boxes-height'>
+                        <div class='template-boxes-content'>
+                            <div class='template-boxes-content-img'>
+                                <img src='https://skin-canvas.arhamsoft.org//images/circle-image.png' alt='box-img' />
+                            </div>
+                            <h4>Lofsak Oprkaooo</h4>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+                        </div>
+                    </div>
+                    <div class='col-xl-3 col-lg-4 boxes-height'>
+                        <div class='template-boxes-content'>
+                            <div class='template-boxes-content-img'>
+                                <img src='https://skin-canvas.arhamsoft.org//images/circle-image.png' alt='box-img' />
+                            </div>
+                            <h4>Massive Lakdoo</h4>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class='about-video-section'>
+    <div class='container-box'>
+        <div class='row d-flex align-items-center'>
+            <div class='col-lg-6'>
+                <div class='about-video-section-content'>
+                    <h3>Lorem Ipsum</h3>
+                    <h6>Lorem ipsum dolor sit amet, consetetur sadipscing elitr</h6>
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, </p>
+                    <p>Yo sea takimata sanctus est Lorem ipsum dolor sit amdcet eorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonu.</p>
+                    <button class='btn-blue'>Lorem Boasle</button>
+                </div>
+            </div>
+            <div class='col-lg-6'>
+                <div class='template-info-video'>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/B-ytMSuwbf8" title="YouTube video player" frameborder="0" allowFullScreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class='template-about-listing'>
+    <div class='container-box'>
+        <div class='row d-flex align-items-center'>
+            <div class='col-lg-6'>
+                <div class='template-info-img'>
+                    <img src='https://skin-canvas.arhamsoft.org//images/circle-image.png' alt='box-img' />
+                </div>
+            </div>
+            <div class='col-lg-6'>
+                <div class='template-about-listing-content'>
+                    <div class='template-about-listing-img'>
+                        <img src='https://skin-canvas.arhamsoft.org//images/circle-image.png' alt='list-img' />
+                    </div>
+                    <div class='template-about-listing-info'>
+                        <h4>Lorem ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
+                    </div>
+                </div>
+                <div class='template-about-listing-content'>
+                    <div class='template-about-listing-img'>
+                        <img src='https://skin-canvas.arhamsoft.org//images/circle-image.png' alt='list-img' />
+                    </div>
+                    <div class='template-about-listing-info'>
+                        <h4>Lorem ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
+                    </div>
+                </div>
+                <div class='template-about-listing-content'>
+                    <div class='template-about-listing-img'>
+                        <img src='https://skin-canvas.arhamsoft.org//images/circle-image.png' alt='list-img' />
+                    </div>
+                    <div class='template-about-listing-info'>
+                        <h4>Lorem ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
+                    </div>
+                </div>
+                <div class='template-about-listing-content'>
+                    <div class='template-about-listing-img'>
+                        <img src='https://skin-canvas.arhamsoft.org//images/circle-image.png' alt='list-img' />
+                    </div>
+                    <div class='template-about-listing-info'>
+                        <h4>Lorem ipsum</h4>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="template-form-wrapper template-about-form">
+    <div class="section-heading">
+        <h1>Lorem ipsum</h1>
+        <h6>Lorem ipsum dolor sit amet</h6>
+    </div>
+    ${{contactus}}
+</div>

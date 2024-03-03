@@ -1,0 +1,8 @@
+/node_modules/
+/package-lock.json
+/uploads
+.pm2/
+src/uploads
+/install_nvm.sh
+src/src.zip
+*.zip

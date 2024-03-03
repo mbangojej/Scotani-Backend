@@ -1,0 +1,13 @@
+.sales-reports-card .table-big-boy.card{
+    transition: all 0.3s;
+}
+.sales-reports-card .table-big-boy.card .card-header{
+    background-color: transparent;
+}
+.sales-reports-card .table-big-boy.card:hover{
+   background-color: #FE9500;
+   color: #fff;
+}
+.sales-reports-card .table-big-boy.card:hover .card-header{
+    color: #fff;
+}

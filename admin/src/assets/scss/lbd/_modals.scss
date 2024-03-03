@@ -1,0 +1,112 @@
+.modal{
+    &.show{
+        .modal-dialog{
+            -webkit-transform: translate(0, 30%);
+            -o-transform: translate(0, 30%);
+            transform: translate(0, 30%);
+        }
+    }
+    &.modal-mini{
+        .modal-dialog{
+            max-width: 255px;
+            margin: 0 auto;
+        }
+    }
+    .modal-content{
+        background:$grey-bg;
+        .modal-header{
+            border-bottom: none;
+            padding-top: 24px;
+            padding-right: 24px;
+            padding-bottom: 0;
+            padding-left: 24px;
+            h4{
+                color:$white-color;
+            }
+            .modal-profile{
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 5.7;
+                box-shadow: 0px 1px 20px 0px rgba(0, 0, 0, 0.3);
+
+                i{
+                    font-size: 32px;
+                    padding-top: 24px;
+                }
+            }
+        }
+
+        .modal-body{
+            padding-top: 24px;
+            padding-right: 24px;
+            padding-bottom: 16px;
+            padding-left: 24px;
+            line-height: 1.9;
+        }
+
+        .modal-body + .modal-footer{
+            padding-top: 0;
+        }
+
+        .modal-footer{
+            border-top: none;
+            padding-right: 24px;
+            padding-bottom: 16px;
+            padding-left: 24px;
+            -webkit-justify-content: flex-end;
+            justify-content: flex-end;
+
+            .btn{
+                margin: 0;
+                padding-left: 16px;
+                padding-right: 16px;
+                width: auto;
+                margin:0 0 0 10px;
+                transition:all ease-in-out 0.3s;
+                &:hover,
+                &:focus{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .user-view-image{
+        border-radius:16px;
+        box-shadow:0 25px 30px rgba(0,0,0,0.3);
+        width:100%;
+        max-width:290px;
+        margin:0 auto 30px;
+        border-radius: 30px;
+        overflow: hidden;
+        img{
+            width:100%;
+            height:auto;
+        }
+    }
+    &.edit-cotnact-modal{
+        #status-dropDown{
+            border-color:#4C2661;
+            background:#4C2661;
+            color:#fff;
+            &:hover{
+                border-color:#4C2661;
+                background:#fff;
+                color:#4C2661;
+            }
+            &:not(:disabled):not(.disabled):active:focus{
+                box-shadow:none !important;
+            }
+        }
+    }
+    .label-font{
+        color:$white-color;
+    }
+    .field-value{
+        color:$medium-dark-gray;
+    }
+    .form-control{
+        color:#fff;
+    }
+}

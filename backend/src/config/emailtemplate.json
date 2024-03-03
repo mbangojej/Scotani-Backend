@@ -1,0 +1,32 @@
+[
+    {
+        "type": "forgot-password",
+        "subject": "Forgot Password",
+        "text": "<p>To reset your password click this link:</p><p>&nbsp;${url}</p><p>If you didn’t ask to reset your password, you can ignore this email.</p><p>Thanks,</p>"
+    },
+    {
+        "type": "contact-email",
+        "subject": "Contact Form",
+        "text": "<p>CONTACT US</p><ul><li>UserName: ${name}</li><li>Email: ${email}</li><li>Message: ${message}</li></ul>"
+    },
+    {
+        "type": "verify-user",
+        "subject": "Verify your account",
+        "text": "<p>Hello ${email} :</p><p>To verify your email click this link:</p><p>&nbsp;${url}</p><p>If you already verify your email, you can ignore this email.</p><p>Thanks,</p>"
+    },
+    {
+        "type": "new-user",
+        "subject": "Congratulation for Scotani User",
+        "text": "<p>PASTE HERE THE RESET NEW USER TEMPLATE SAMPLEs</p>"
+    },
+    {
+        "type": "contact-status",
+        "subject": "Change Status for Contact Form",
+        "text": "<p>Your Query No# ${_id} status has been updated to ${status} .</p>"
+    },
+    {
+        "type": "invite-user",
+        "subject": "Invite User",
+        "text": "<p>Hello ${email} :</p><p>Join to our platform join us with: ${url}</p><p>Thanks,</p>"
+    }
+]

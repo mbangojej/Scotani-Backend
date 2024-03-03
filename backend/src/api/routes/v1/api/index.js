@@ -1,0 +1,26 @@
+const express = require('express')
+const authRoutes = require('./auth.route')
+const productRoutes = require('./product.route')
+const orderRoutes = require('./order.route')
+const userRoutes = require('./user.route')
+const cmsRoutes = require('./cms.routes')
+const cartRoutes = require('./cart.route')
+const wishlistRoutes = require('./wishlist.route')
+const faqRoutes = require('./faq.route')
+const designImprintRoutes = require('./designImprint.route')
+const NotificationRoutes = require('./notification.route')
+const router = express.Router()
+/**
+ * GET v1/status
+ */
+router.use('/auth', authRoutes) 
+router.use('/product', productRoutes) 
+router.use('/cart', cartRoutes) 
+router.use('/wishlist', wishlistRoutes) 
+router.use('/order', orderRoutes) 
+router.use('/user', userRoutes) 
+router.use('/settings', cmsRoutes)
+router.use('/faqs', faqRoutes)
+router.use('/imprints', designImprintRoutes)
+router.use('/notifications', NotificationRoutes)
+module.exports = router

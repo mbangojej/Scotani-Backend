@@ -1,0 +1,32 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/admin/node_modules
+/admin/npm-debug.log*
+/admin/yarn-error.log
+/admin/yarn.lock
+/admin/package-lock.json
+
+# production
+/admin/dist
+
+# misc
+/admin/.DS_Store
+
+# umi
+/admin/src/.umi
+/admin/src/.umi-production
+/admin/src/.umi-test
+
+/admin.eslintcache
+
+
+
+
+/backend/node_modules/
+/backend/package-lock.json
+/backend/uploads
+/backend/src/uploads
+/install_nvm.sh
+/backend/src/src.zip
+/backend/*.zip
